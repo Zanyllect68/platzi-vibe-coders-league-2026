@@ -8,7 +8,7 @@
 
 | Proyecto | Stack | Descripción | Link |
 |----------|-------|-------------|------|
-| 🐾 **Patitas Felices** | Next.js 16 · TypeScript · Tailwind · NVIDIA NIM | Asistente virtual IA para una veterinaria y pet shop en Medellín | [`./web/`](./web/README.md) |
+| 🐾 **Patitas Felices** | Next.js 16 · TypeScript · Tailwind · NVIDIA NIM | Asistente virtual IA para una veterinaria y pet shop en Medellín | [`./proyecto 1/`](./proyecto 1/README.md) |
 
 > Próximamente más proyectos se unirán a esta colección.
 
