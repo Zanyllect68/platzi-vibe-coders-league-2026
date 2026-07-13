@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Design system (portado de freelance-binder) ─── */
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    --background: oklch(0.988 0.006 95);
+    --foreground: oklch(0.235 0.012 75);
+    --card: oklch(0.997 0.003 95);
+    --card-foreground: oklch(0.235 0.012 75);
+    --popover: oklch(0.997 0.003 95);
+    --popover-foreground: oklch(0.235 0.012 75);
+
+    --primary: oklch(0.42 0.072 168);
+    --primary-foreground: oklch(0.985 0.01 120);
+
+    --secondary: oklch(0.955 0.012 95);
+    --secondary-foreground: oklch(0.3 0.015 75);
+    --muted: oklch(0.955 0.012 95);
+    --muted-foreground: oklch(0.52 0.014 80);
+    --accent: oklch(0.93 0.03 150);
+    --accent-foreground: oklch(0.32 0.05 168);
+    --destructive: oklch(0.55 0.2 27);
+    --destructive-foreground: oklch(0.985 0.01 120);
+    --border: oklch(0.9 0.012 90);
+    --input: oklch(0.9 0.012 90);
+    --ring: oklch(0.42 0.072 168);
+
+    --font-sans: "Inter", system-ui, sans-serif;
+    --font-display: "Fraunces", Georgia, serif;
+  }
+
+  * {
+    border-color: var(--border);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  .animate-step {
+    animation: fade-in-up 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
