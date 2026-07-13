@@ -1,7 +1,7 @@
 # 📄 Freelancer Contracts — Generador de Contratos
 
 > **Proyecto 2** — Vibe Coders League 2.0 (Platzi)
-> Stack: React 18 + Vite + Tailwind CSS 3 | Python FastAPI | Supabase (PostgreSQL)
+> Stack: React 18 + Vite + Tailwind CSS 3 | Python FastAPI | Supabase (PostgreSQL) | Vercel (Frontend) | Railway (Backend)
 
 ## 📋 Propuesta
 
@@ -174,6 +174,29 @@ Row Level Security activado con políticas para INSERT anónimo y SELECT autenti
 
 ---
 
+## 🌐 Deploy
+
+| Capa | Servicio | URL |
+|:---|:---|---:|
+| Frontend | Vercel | `https://platzi-vibe-coders-league-2026.vercel.app` |
+| Backend | Railway | Asignada por Railway al desplegar |
+| Base de Datos | Supabase | `kmzlfuaufmgvmlzatlnk.supabase.co` |
+
+### Variables de entorno en producción
+
+**Vercel (Frontend):**
+```
+VITE_API_URL=https://<railway-url>.up.railway.app/api
+```
+
+**Railway (Backend):**
+```
+SUPABASE_URL=https://kmzlfuaufmgvmlzatlnk.supabase.co
+SUPABASE_KEY=<anon-key>
+```
+
+---
+
 ## 🛠️ Stack Tecnológico
 
 | Capa | Tecnología |
@@ -182,6 +205,8 @@ Row Level Security activado con políticas para INSERT anónimo y SELECT autenti
 | Backend | Python 3.13, FastAPI, Pydantic v2 |
 | Base de Datos | Supabase (PostgreSQL) |
 | API Client | supabase-py 2.5 |
+| Deploy Frontend | Vercel |
+| Deploy Backend | Railway |
 
 ---
 
