@@ -87,3 +87,22 @@ assert-flow/
 ```
 
 > ⚡ **Sin API key:** el simulador usa escenarios fijos como fallback.
+
+## 🌐 Deploy
+
+| Capa | Servicio | URL |
+|:---|:---|---:|
+| Frontend | Vercel | [`https://platzi-vibe-coders-league-2026-d4l2.vercel.app`](https://platzi-vibe-coders-league-2026-d4l2.vercel.app) |
+| Backend | Vercel | [`https://platzi-vibe-coders-league-2026-s6jp.vercel.app`](https://platzi-vibe-coders-league-2026-s6jp.vercel.app) |
+
+### Variables de entorno
+
+**Frontend (Vercel):**
+```
+VITE_API_URL=https://platzi-vibe-coders-league-2026-s6jp.vercel.app/api
+```
+
+**Backend (Vercel):**
+```
+NVIDIA_API_KEY=nvapi-...
+```
